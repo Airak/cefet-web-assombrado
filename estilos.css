@@ -157,6 +157,8 @@ main {
   padding: 1em;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  position: sticky;
+  top: 0px;
 }
 
 #tags h1 {
@@ -278,5 +280,61 @@ footer .texto-rodape {
   line-height: 1em;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-block;  
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+span:active{
+  position: relative;
+  top: -2px;
+  left: -2px;
+  cursor: pointer;
+}
+
+.post{
+  position: relative;
+}
+
+#posts-principais .titulo{
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 6px;
+  opacity: 0;
+}
+
+
+#posts-principais .titulo:hover{
+    top: 6px;
+    opacity: 1;
+}
+
+.boo {
+  position: absolute;
+  opacity: 0.2;
+}
+
+#boo1{
+  left:20px;
+}
+
+#boo2{
+  left:200px;
+}
+
+#boo3{
+  left:400px;
+}
+
+#boo1:hover{
+  opacity: 1;
+}
+
+#boo2:hover{
+  opacity: 1;
+}
+
+#boo3:hover{
+  opacity: 1;
 }
